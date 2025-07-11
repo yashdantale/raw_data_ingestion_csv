@@ -1,5 +1,5 @@
 -- Create RAW Layer Table
-CREATE TABLE raw_db.products_raw (
+CREATE TABLE raw_db.products (
     Index BIGINT,
     Name STRING,
     Description STRING,
