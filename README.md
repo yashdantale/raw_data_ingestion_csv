@@ -5,7 +5,7 @@ This repo demonstrates how to ingest a raw CSV file into a simulated Iceberg tab
 ## 🔧 Steps
 
 1. Read `products.csv`
-2. Ingest it as the raw layer (`iceberg_tables/raw`)
+2. Ingest it as the raw layer (`raw_db.products`)
 3. Simulated Iceberg format using partitioned CSV (can plug into Iceberg with catalog support)
 
 ## 📂 Files
