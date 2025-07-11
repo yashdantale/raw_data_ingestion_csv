@@ -7,7 +7,7 @@ spark = SparkSession.builder \
 # Load raw CSV
 df_raw = spark.read.csv("data/products.csv", header=True, inferSchema=True)
 
-# Write to raw layer (simulate Iceberg as CSV)
-df_raw.write.mode("overwrite").option("header", True).csv("iceberg_tables/raw")
+# Write to raw layer table
+df_raw.write.format("iceberg").mode("overwrite").insertInto("raw_db.products")
 
-print("✅ Raw data written to 'iceberg_tables/raw'")
+print("✅ Raw data written to raw_db.products")
